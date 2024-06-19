@@ -17,3 +17,13 @@
         android:layout_marginTop="32dp"
         android:layout_marginBottom="16dp"
         android:contentDescription="Tiket" />
+
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nama Anda"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/etDate"
+        app:layout_constraintStart_toStartOf="parent"

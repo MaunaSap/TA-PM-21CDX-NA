@@ -1,4 +1,4 @@
-package com.example.ta_pm_21cdx_na
+package com.example.appbooking
 
 import org.junit.Test
 

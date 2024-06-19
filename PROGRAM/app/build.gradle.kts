@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    namespace = "com.example.ta_pm_21cdx_na"
+    namespace = "com.example.appbooking"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.ta_pm_21cdx_na"
-        minSdk = 24
+        applicationId = "com.example.appbooking"
+        minSdk = 21
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -33,7 +33,6 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    buildFeatures{true }
 }
 
 dependencies {

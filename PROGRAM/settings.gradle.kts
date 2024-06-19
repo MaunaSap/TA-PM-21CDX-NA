@@ -19,5 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "TA-PM-21CDX-NA"
+rootProject.name = "AppBooking"
 include(":app")
+ 

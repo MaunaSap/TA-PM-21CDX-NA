@@ -4,4 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity_order"
-    android:background="@drawable/menyelam3"
+    android:background="@drawable/menyelam3">
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="200dp"
+        android:layout_height="150dp"

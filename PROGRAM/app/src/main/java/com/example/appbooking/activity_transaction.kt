@@ -4,7 +4,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
-class TransactionActivity : AppCompatActivity() {
+class activity_transaction : AppCompatActivity() {
 
     private lateinit var editTextQuantity: EditText
     private lateinit var buttonBook: Button

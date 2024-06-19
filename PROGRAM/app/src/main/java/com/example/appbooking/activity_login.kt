@@ -4,8 +4,9 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.appbooking.R
 
-class LoginActivity : AppCompatActivity() {
+class activity_login : AppCompatActivity() {
 
     private lateinit var editTextUsername: EditText
     private lateinit var editTextPassword: EditText
@@ -24,7 +25,7 @@ class LoginActivity : AppCompatActivity() {
             val password = editTextPassword.text.toString()
 
             // Example login logic (replace with your actual authentication)
-            if (username == "admin" && password == "password") {
+            if (username == "admin" && password == "123") {
                 // Login successful, navigate to TransactionActivity
                 val intent = Intent(this, TransactionActivity::class.java)
                 startActivity(intent)

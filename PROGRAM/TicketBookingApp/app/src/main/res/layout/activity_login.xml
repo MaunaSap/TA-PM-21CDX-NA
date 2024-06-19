@@ -34,3 +34,13 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:contentDescription="User Profile" />
+
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/imgProfile"
+        app:layout_constraintBottom_toTopOf="@+id/etPassword"

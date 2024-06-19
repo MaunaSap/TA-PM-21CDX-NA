@@ -1,20 +1,37 @@
-package com.example.appbooking
-
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
-class activity_login : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
+
+    private lateinit var editTextUsername: EditText
+    private lateinit var editTextPassword: EditText
+    private lateinit var buttonLogin: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_login)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        editTextUsername = findViewById(R.id.editTextUsername)
+        editTextPassword = findViewById(R.id.editTextPassword)
+        buttonLogin = findViewById(R.id.buttonLogin)
+
+        buttonLogin.setOnClickListener {
+            val username = editTextUsername.text.toString()
+            val password = editTextPassword.text.toString()
+
+            // Example login logic (replace with your actual authentication)
+            if (username == "admin" && password == "password") {
+                // Login successful, navigate to TransactionActivity
+                val intent = Intent(this, TransactionActivity::class.java)
+                startActivity(intent)
+            } else {
+                // Handle invalid login
+                Toast.makeText(this, "Invalid username or password", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }

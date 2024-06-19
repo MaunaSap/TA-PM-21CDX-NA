@@ -1,20 +1,33 @@
-package com.example.appbooking
-
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
-class activity_transaction : AppCompatActivity() {
+class TransactionActivity : AppCompatActivity() {
+
+    private lateinit var editTextQuantity: EditText
+    private lateinit var buttonBook: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_transaction)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        editTextQuantity = findViewById(R.id.editTextQuantity)
+        buttonBook = findViewById(R.id.buttonBook)
+
+        buttonBook.setOnClickListener {
+            val quantity = editTextQuantity.text.toString().toIntOrNull()
+
+            if (quantity != null && quantity > 0) {
+                // Example: Perform booking or transaction logic here
+                // You can add your own implementation
+                // For simplicity, we just show a toast message
+                Toast.makeText(this, "Booking for $quantity people confirmed!", Toast.LENGTH_SHORT).show()
+            } else {
+                // Handle invalid input (e.g., quantity not entered)
+                Toast.makeText(this, "Please enter a valid quantity", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }

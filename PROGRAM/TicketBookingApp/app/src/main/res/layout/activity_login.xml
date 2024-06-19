@@ -8,7 +8,7 @@
 
     <TextView
         android:id="@+id/tvWelcome"
-        android:layout_width="dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Selamat datang di Mensnorkeling"
         android:textSize="20sp"

@@ -38,14 +38,14 @@ class activity_order : AppCompatActivity() {
 
                 sharedPreferencesHelper.saveTicket(name, date, validUntil)
 
-                Toast.makeText(this, "Tiket berhasil dipesan", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Tiket Berhasil Dipesan", Toast.LENGTH_SHORT).show()
 
                 // Kembali ke MainActivity
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
                 finish()
             } else {
-                Toast.makeText(this, "Harap isi semua field", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Harap Di Isi !", Toast.LENGTH_SHORT).show()
             }
         }
     }

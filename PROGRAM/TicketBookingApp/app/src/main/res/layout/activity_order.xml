@@ -44,3 +44,7 @@
         android:hint="Tanggal Pembelian"
         android:focusable="true"
         android:clickable="true"
+        app:layout_constraintTop_toBottomOf="@id/etName"
+        app:layout_constraintBottom_toTopOf="@+id/btnSubmit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"

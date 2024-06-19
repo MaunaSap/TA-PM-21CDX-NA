@@ -8,7 +8,7 @@
 
     <TextView
         android:id="@+id/tvWelcome"
-        android:layout_width="dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Selamat datang di Mensnorkeling"
         android:textSize="20sp"
@@ -22,6 +22,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginTop="32dp"
         app:layout_constraintVertical_chainStyle="packed"/>
+
     <ImageView
         android:id="@+id/imgProfile"
         android:layout_width="150dp"
@@ -34,7 +35,6 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:contentDescription="User Profile" />
-
 
     <EditText
         android:id="@+id/etEmail"
@@ -52,6 +52,7 @@
         android:background="@android:color/transparent"
         android:padding="10dp"
         android:textColor="@android:color/black"/>
+
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="0dp"
@@ -68,6 +69,7 @@
         android:background="@android:color/transparent"
         android:padding="10dp"
         android:textColor="@android:color/black"/>
+
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="0dp"

@@ -5,3 +5,12 @@
     android:layout_height="match_parent"
     android:background="@drawable/menyelam"
     tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="dp"
+        android:layout_height="wrap_content"
+        android:text="Selamat datang di Mensnorkeling"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"

@@ -5,3 +5,8 @@
     android:layout_height="match_parent"
     android:background="@drawable/menyelam"
     tools:context=".activity_login">
+    
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"

@@ -26,3 +26,5 @@
         app:layout_constraintBottom_toTopOf="@+id/etDate"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginStart="32dp"

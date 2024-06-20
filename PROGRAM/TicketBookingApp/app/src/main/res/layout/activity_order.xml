@@ -17,8 +17,6 @@
         android:layout_marginTop="32dp"
         android:layout_marginBottom="16dp"
         android:contentDescription="Tiket" />
-
-
     <EditText
         android:id="@+id/etName"
         android:layout_width="0dp"
@@ -35,8 +33,6 @@
         android:background="@android:color/transparent"
         android:padding="10dp"
         android:textColor="@android:color/black"/>
-
-
     <EditText
         android:id="@+id/etDate"
         android:layout_width="0dp"
@@ -54,7 +50,6 @@
         android:background="@android:color/transparent"
         android:padding="10dp"
         android:textColor="@android:color/black"/>
-
     <Button
         android:id="@+id/btnSubmit"
         android:layout_width="0dp"
@@ -63,12 +58,9 @@
         app:layout_constraintTop_toBottomOf="@id/etDate"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginTop="20dp"
         android:layout_marginStart="35dp"
-
         android:layout_marginEnd="35dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

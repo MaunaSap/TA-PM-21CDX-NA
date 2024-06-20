@@ -57,3 +57,4 @@
         android:text="Pesan Sekarang"
         app:layout_constraintTop_toBottomOf="@id/etDate"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
